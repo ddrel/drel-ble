@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'ble-root',
+  template: ` <ble-dashboard></ble-dashboard> `,
 })
-export class AppComponent {
-  title = 'agrilife-pwa';
-}
+export class AppComponent {}

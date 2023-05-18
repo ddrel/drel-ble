@@ -19,15 +19,20 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@manekinekko/angular-web-bluetooth": [
+        "dist/manekinekko/angular-web-bluetooth/manekinekko-angular-web-bluetooth",
+        "dist/manekinekko/angular-web-bluetooth"
+      ]
+    },
+    "types": ["jest"],
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
+    "strictInjectionParameters": false,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": false
   }
 }
